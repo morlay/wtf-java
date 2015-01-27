@@ -1,13 +1,8 @@
 package hello;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 import hello.Greeting;
-
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.*;
 
 public class GreetingTest {
     @Test
@@ -18,7 +13,7 @@ public class GreetingTest {
 
         Greeting greeting = new Greeting(id, content);
 
-        assertEquals(greeting.getId(), 1);
+        assertEquals(greeting.getId(), id);
         assertEquals(greeting.getContent(), content);
     }
 }
